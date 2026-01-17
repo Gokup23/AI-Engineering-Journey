@@ -57,5 +57,6 @@ This project was developed during my GATE DA 2026 preparation to bridge the gap 
         Uses nested loops to calculate window positions based on the building's dimensions.
 
     Finalization: Closes the SVG tags and saves the file.
+    
+<img width="847" height="512" alt="Screenshot 2026-01-17 at 7 40 22 AM" src="https://github.com/user-attachments/assets/533a6b9b-2b23-4691-a502-91a6254daca2" />
 
-    <img width="847" height="512" alt="Screenshot 2026-01-17 at 7 40 22 AM" src="https://github.com/user-attachments/assets/fc22c373-48c4-4e10-874d-6ade3e268032" />
