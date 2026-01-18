@@ -60,3 +60,19 @@ This project was developed during my GATE DA 2026 preparation to bridge the gap 
     
 <img width="847" height="512" alt="Screenshot 2026-01-17 at 7 40 22 AM" src="https://github.com/user-attachments/assets/533a6b9b-2b23-4691-a502-91a6254daca2" />
 
+
+# 💼 TradeBot: Automated Portfolio Auditor
+
+A Python-based Data Engineering tool designed to validate, clean, and analyze high-frequency trading data.
+
+## 🔍 Problem Solved
+Raw trading logs often contain corrupted data (missing prices, string errors) or logical impossibilities (negative quantities). Manually checking thousands of rows is impossible. This script automates the audit process.
+
+## 🛠️ Technical Implementation
+* **csv.DictReader:** Used for robust, column-based data parsing.
+* **Exception Handling:** Implemented `try-except` blocks to catch `ValueError` (Data Type mismatches).
+* **Business Logic Validation:** Manually raises errors for logical fallacies (e.g., Negative Quantity).
+* **Logging:** Separates clean data (`verified_trades.csv`) from corrupted entries (`audit.log`).
+
+<img width="1200" height="479" alt="Screenshot 2026-01-18 at 8 33 57 AM" src="https://github.com/user-attachments/assets/a7e0ca20-586f-45c5-a69b-49bfc505984a" />
+
