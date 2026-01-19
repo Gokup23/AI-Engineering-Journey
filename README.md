@@ -76,3 +76,62 @@ Raw trading logs often contain corrupted data (missing prices, string errors) or
 
 <img width="1200" height="479" alt="Screenshot 2026-01-18 at 8 33 57 AM" src="https://github.com/user-attachments/assets/a7e0ca20-586f-45c5-a69b-49bfc505984a" />
 
+IMAGE GLITCHER
+A Python tool that performs "digital lobotomies" on image files to create cyberpunk glitch art.
+
+This project bypasses standard image libraries (like PIL/OpenCV) to manipulate raw file bytes directly. It opens images in binary mode, injects random noise into the data stream, and stitches the file back together—creating unpredictable visual artifacts.
+How It Works (The "Under the Hood" Logic)
+
+Most image editors work with Pixels (R, G, B values). This tool works with Bytes (Hex Data).
+1. Binary Surgery (rb Mode)
+
+We open the file using Python's rb (Read Binary) mode. This treats the image not as a picture, but as a raw stream of data (e.g., \xFF\xD8\xFF...).
+2. Mutable Memory (bytearray)
+
+Python's standard bytes objects are immutable (cannot be changed). To modify the file in-memory without saving it 1000 times, we convert the stream into a mutable bytearray:
+Python
+
+with open(filename, "rb") as f:
+    data = f.read()
+    mutable_data = bytearray(data)  # Now we can edit specific bytes!
+
+3. Header Protection (The "Brain" of the File)
+
+Every file (JPG, PNG) starts with a Header—a specific sequence of bytes that tells the OS "I am an image."
+
+    If we corrupt the header, the file breaks and won't open.
+
+    Solution: We implement a Dynamic Safe Zone that skips the first 10-15% of the file bytes, ensuring we only glitch the pixel data, not the metadata.
+
+4. Noise Injection
+
+We randomly select byte addresses and overwrite them with random integers (0-255). This corrupts the compression algorithms (like Huffman coding in JPGs), forcing the decoder to "guess" the colors, resulting in cool visual tears and color shifts.
+🚀 How to Run
+
+    Clone the Repo:
+    Bash
+
+git clone https://github.com/YourUsername/Binary-Surgeon.git
+cd Binary-Surgeon
+
+Add a Target: Place any .jpg or .png image in the folder.
+
+Run the Script:
+Bash
+
+    python glitcher.py
+
+    Check the Output: A new file named glitched_filename.jpg will appear in your folder.
+
+⚙️ Configuration (Tweak the Chaos)
+
+You can adjust the parameters inside glitcher.py to get different artistic effects:
+Parameter	Recommended Value	Effect
+intensity	0.005 - 0.02	Controls what % of bytes get destroyed. Warning: Go too high (>0.05) and the file may die.
+header_safe_zone	int(file_size * 0.10)	Percentage of the file start to protect. Increase this if your output files are blank/broken.
+⚠️ Disclaimer
+
+This script corrupts data. While it creates a copy (glitched_), never run this on your only copy of an important photo. The output is random—some files may look cool, others may break completely.
+
+![Untitled design(1)](https://github.com/user-attachments/assets/e5ce8412-7e81-4e69-a6c8-8fb1f5aaf643)
+
