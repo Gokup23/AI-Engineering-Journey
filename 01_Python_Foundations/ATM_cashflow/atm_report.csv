@@ -1,0 +1,8 @@
+TxnID,Type,Amount,Result,Machine_Balance_After
+TXN001,Deposit,5000,Success,15000
+TXN002,Withdraw,2000,Success,13000
+TXN003,Withdraw,15000,Failed: Insufficient Funds,13000
+TXN004,Deposit,invalid,ERROR: Invalid Amount,13000
+TXN005,Withdraw,500,Success,12500
+TXN006,Withdraw,-100,ERROR: Invalid Amount,12500
+TXN007,Deposit,2000,Success,14500

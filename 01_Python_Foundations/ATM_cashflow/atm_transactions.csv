@@ -1,0 +1,8 @@
+TxnID,Type,Amount,Status
+TXN001,Deposit,5000,Request
+TXN002,Withdraw,2000,Request
+TXN003,Withdraw,15000,Request
+TXN004,Deposit,invalid,Request
+TXN005,Withdraw,500,Request
+TXN006,Withdraw,-100,Request
+TXN007,Deposit,2000,Request
