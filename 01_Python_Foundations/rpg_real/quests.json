@@ -1,0 +1,6 @@
+[
+    {"id": 1, "task": "Heavy Pull Day", "xp": 100, "status": "pending"},
+    {"id": 2, "task": "JSON Logic Project", "xp": 150, "status": "pending"},
+    {"id": 3, "task": "Cold Shower", "xp": 50, "status": "pending"},
+    {"id": 4, "task": "Meal Prep", "xp": 75, "status": "completed"}
+]
