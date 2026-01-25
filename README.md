@@ -135,3 +135,49 @@ This script corrupts data. While it creates a copy (glitched_), never run this o
 
 ![Untitled design(1)](https://github.com/user-attachments/assets/e5ce8412-7e81-4e69-a6c8-8fb1f5aaf643)
 
+Here is a clean, text-only README for your project.
+OOP Turtle Race
+Description
+
+This project is a visual simulation of a race between multiple turtle objects. It uses Python's Turtle graphics library to demonstrate Object-Oriented Programming (OOP) concepts. Each turtle is an independent instance of a class with its own properties and behavior, moving at random speeds until a winner crosses the finish line.
+Features
+
+    Object-Oriented Design: Uses a Racer class to define the properties and behaviors of a racing unit.
+
+    Independent Instances: Creates multiple racer objects (Cyan, Magenta, Lime), each managing its own position and speed.
+
+    Randomized Movement: Each racer moves forward by a random distance in every frame, making the outcome unpredictable.
+
+    Visual Output: Renders the race in real-time using a graphical window.
+
+Requirements
+
+    Python 3.x
+
+    Turtle module (usually included with standard Python installations)
+
+Usage
+
+    Save the script as race.py.
+
+    Run the script using a terminal or IDE.
+
+    A window will open displaying the racers at the starting line.
+
+    Watch the race progress until a winner is announced in the console.
+
+    Click anywhere on the window to close the application after the race ends.
+
+Code Structure
+
+    Class Racer: The blueprint for creating a turtle racer. It handles initialization (color, position) and movement.
+
+    init Method: Sets up the visual avatar, color, and starting coordinates.
+
+    move Method: Advances the turtle by a random number of steps (1 to 10).
+
+    Game Loop: A while loop that continuously updates the position of all racers and checks if any have crossed the finish line (x > 200).
+
+
+<img width="883" height="945" alt="Screenshot 2026-01-25 at 8 42 11 AM" src="https://github.com/user-attachments/assets/9cbb67a5-856a-46b5-a88d-370c75785a0e" />
+
