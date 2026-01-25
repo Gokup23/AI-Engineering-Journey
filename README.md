@@ -135,7 +135,7 @@ This script corrupts data. While it creates a copy (glitched_), never run this o
 
 ![Untitled design(1)](https://github.com/user-attachments/assets/e5ce8412-7e81-4e69-a6c8-8fb1f5aaf643)
 
-Here is a clean, text-only README for your project.
+
 OOP Turtle Race
 Description
 
