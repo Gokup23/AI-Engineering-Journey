@@ -33,9 +33,23 @@ elements to right of deleted element have to be shifted one space left , requiri
 array.remove(55)#removes first occurence of 55
 del array[2:4]#delets from index 2 - 4
 print(array)
-a = 15
-b = 15
-c = 300
-d = 300
-print(a is b, c is d)
+
+#Arrays are prefefined in python , but we will implement our own arrays
+
+class my_array():
+    def __init__(self):
+        self.length = 0 #initializing length to 0
+        self.data= {} #data in empty dict 
+        
+
+#Attributes of array class are stored in dictinoary by default ,
+#when __dict__ method called on an instance of class it returns attributes of class along with their values in a dict format
+#but when we print an array , we get elements as output, when we print instance of class
+#built in __str__ called- we may modify how we need the output  
+
+    def __str__(self):
+        print(self.data.values())
+        return str(seld.__dict__)
+
+
 
