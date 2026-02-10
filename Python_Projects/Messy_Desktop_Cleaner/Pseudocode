@@ -1,0 +1,13 @@
+ALGORITHM FileOrganizer
+    INPUT: Path to "Downloads" folder
+    OUTPUT: Organized files
+
+    1. Define the Mapping:
+       - "Images": [.jpg, .png, .jpeg]
+       - "Docs": [.pdf, .docx, .txt]
+    
+    2. LOOP through every file in "Downloads":
+       a. Get the file extension (e.g., ".pdf")
+       b. Check mapping: Where does it go?
+       c. IF destination folder doesn't exist, CREATE it.
+       d. MOVE file to destination.
