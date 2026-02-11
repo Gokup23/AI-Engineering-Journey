@@ -49,7 +49,32 @@ class my_array():
 
     def __str__(self):
         print(self.data.values())
-        return str(seld.__dict__)
+        return str(self.__dict__)
+    
+    def get(self,index):
+        return self.data[index] #takes index as parameter and returns corresponding value
+    
+    def push(self, item):
+        self.length += 1 
+        self.data[self.length - 1] = item #Adds item at end
+
+    def pop(self):
+        last_item = self.data[self.length-1] #collects last element
+        del self.data[self.length - 1] #deletes last ele
+        self.length -=1 # reduces length by 1 
+        return last_item # returns popped element
+    
+    def insert(self,index,item):
+        self.length +=1
+        for i in range(self.length-1 , index,-1):
+            self.data[i] = self.data[i-1] #shifts every element from index to end by 1 place towards right
+            self.data[index] = item #adds element at given index , O(n) operation
+
+    def delete(self,index):
+        for i in range(index,self.length-1):
+            self.data[i] = self.data[i+1] #Shifts elements from given index to end by one place towards left
+        del self.data[self.length-1] # The last element which remains 
+    # because arrays are contingious and gaps arent allowed
 
 
 
