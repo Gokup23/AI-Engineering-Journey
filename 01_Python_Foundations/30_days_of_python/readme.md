@@ -9,4 +9,5 @@ Exercise_1 - Variables & Built in functions
 <br>Exercise_2 - Operators
 <br>Exercise_3 - String
 <br>Exercise_4 - List
+<br>Exercise_5 - tuple
 =======
