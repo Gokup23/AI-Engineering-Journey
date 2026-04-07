@@ -10,4 +10,7 @@ Exercise_1 - Variables & Built in functions
 <br>Exercise_3 - String
 <br>Exercise_4 - List
 <br>Exercise_5 - tuple
+<br>Exercise_6 - Sets
+<br>Exercise_5 - Dictonaries
+<br>Exercise_5 - Conditionals
 =======
