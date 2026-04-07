@@ -11,6 +11,6 @@ Exercise_1 - Variables & Built in functions
 <br>Exercise_4 - List
 <br>Exercise_5 - tuple
 <br>Exercise_6 - Sets
-<br>Exercise_5 - Dictonaries
-<br>Exercise_5 - Conditionals
+<br>Exercise_7 - Dictonaries
+<br>Exercise_8 - Conditionals
 =======
