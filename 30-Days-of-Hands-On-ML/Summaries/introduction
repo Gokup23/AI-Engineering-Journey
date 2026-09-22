@@ -1,0 +1,65 @@
+we will be using production ready python frameworks = 
+scikit learn
+Tensorflow
+keras
+
+Prerequisities-
+Python intermediate
+Pandas , Numpy , Matplotlib
+
+Machine learning is basically ability of the computer to learn without human intervention.
+ML allows for automatic updation to the model , as it learns via the data , is highly flexible over traditional computing 
+we do not need to add rules after every change to environment
+
+TYPES- on training supervision
+
+1. Supervised ML
+- is given data with labels/targets so it can learn under supervision 
+-training set involves desired solutions 
+2. Unsupervised ML
+- Training data is unlabeled
+- system tries to learn without a teacher , usually by seeing patterns in the data via data mining .
+-we often use dimensionality reduction to reduce excess features
+-always reduce the dimensions in your training data using algorithms , allow faster loads , better results
+-Clustering , anomaly detection - different and very rare like extremities
+-novelty detection - new instances that are different
+-association rule learning - dig and find intresting relations among attributes
+
+3.Semi Supervised ML
+-some is labeled,some not
+-most are combinations of Supervised and UnSupervised
+
+4.Self Supervised ML
+-Generating a labeled dataset from a unlabeled one
+-Now any supervised algorithm can be used on this
+-usually have to tweak model asper needs
+
+Reinforcement learning
+-involves an agent in an unknown environment , where it observes the environment , select and performs tasks
+gets rewarded (Penalty or reward) - to learn from best strategy - a POLICY
+-policy defines what action it chooses for a situation
+
+1.batch learning
+-offline learning, it uses what it already knows against changing environments
+-this phenomenon called data drift or model rotting , to prevent have to train a fresh new model on old + new data taking hours ,so you will likely train it like weekly or as needs
+can be automated , but uses a lot of resources
+
+2.Online learning
+-train system incrementally by feeding it data sequences 
+-each step is fast and cheap
+-for systems that need constant changes
+-learning rate - how fast it adapts to new data , more quicker leads to forgetting older data
+-bad data can cause quick degredations to the model 
+
+Instance Based vs Model Based ML
+
+1.
+
+
+
+
+
+
+
+
+How do i automaticlally generate notes - precise 
